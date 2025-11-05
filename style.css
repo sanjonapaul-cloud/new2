@@ -1,0 +1,141 @@
+/* Basic Reset and Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Input Area Styling */
+#input-area {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+}
+
+#config-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#config-form input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#generate-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#generate-btn:hover {
+    background-color: #218838;
+}
+
+/* Output Area Styling */
+#output-area {
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+#message {
+    text-align: center;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Seating Container & Seat Styling */
+#seating-container {
+    padding: 10px;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column; /* To display rooms vertically */
+    gap: 20px;
+}
+
+.room {
+    border: 2px solid #007bff;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #eaf3ff;
+}
+
+.room h3 {
+    margin-top: 0;
+    color: #007bff;
+    border-bottom: 1px solid #007bff;
+    padding-bottom: 5px;
+}
+
+.seating-grid {
+    display: grid;
+    gap: 5px;
+    /* This will be adjusted by JS based on user input for rows/cols */
+    /* Example: grid-template-columns: repeat(10, 1fr); */
+}
+
+.seat {
+    border: 1px solid #007bff;
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.empty-seat {
+    background-color: #f4f7f6;
+    border: 1px dashed #ccc;
+    color: #999;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    color: #666;
+    border-top: 1px solid #eee;
+}
